@@ -187,7 +187,7 @@ const Appbar = () => {
             component="div"
             sx={{ display: { xs: 'none', sm: 'block' } }}
           >
-            PS
+            WheelStation
           </Typography>
           <Search>
             <SearchIconWrapper>

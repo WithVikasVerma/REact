@@ -1,5 +1,4 @@
 import './App.css';
-import Body from "./components/Body";
 import Appbar from "./components/Appbar"
 import { Switch,Route, BrowserRouter} from "react-router-dom";
 import Home from './components/pages/Home';
@@ -8,8 +7,11 @@ import Contact from './components/pages/Contact';
 import {createTheme, ThemeProvider} from '@material-ui/core'
 import DividerText from './components/Divider';
 import Ske from './components/Skeleton';
-import TemporaryDrawer from './components/Sidebar';
 import ImageMasonry from './components/Masonry';
+import RecipeReviewCard  from './components/Cards';
+// import RecipeReviewCard  from './components/Card2';
+
+import { Box } from '@mui/system';
 
 
 const theme = createTheme ({
@@ -34,8 +36,24 @@ function App() {
                 <Route exact path="/contact" component={Contact}/>
 
               </Switch>
-            <Body />
-            <TemporaryDrawer />
+            <Box sx={{display:'flex',flexWrap: 'wrap', justifyContent:'center', }}>
+            <RecipeReviewCard />
+            </Box>
+            <Box sx={{display:'flex',flexWrap: 'wrap', justifyContent:'center', }}>
+            <Box/>
+            </Box><Box sx={{display:'flex',flexWrap: 'wrap', justifyContent:'center', }}>
+            <RecipeReviewCard/>
+            </Box><Box sx={{display:'flex',flexWrap: 'wrap', justifyContent:'center', }}>
+            <RecipeReviewCard/>
+            </Box><Box sx={{display:'flex',flexWrap: 'wrap', justifyContent:'center', }}>
+            <RecipeReviewCard/>
+            </Box><Box sx={{display:'flex',flexWrap: 'wrap', justifyContent:'center', }}>
+            <RecipeReviewCard/>
+            </Box><Box sx={{display:'flex',flexWrap: 'wrap', justifyContent:'center', }}>
+            <RecipeReviewCard/>
+            </Box><Box sx={{display:'flex',flexWrap: 'wrap', justifyContent:'center', }}>
+            <RecipeReviewCard/>
+            </Box>
             <DividerText />   
             <Ske />
             <ImageMasonry />

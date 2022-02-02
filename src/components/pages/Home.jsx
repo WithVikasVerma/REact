@@ -3,13 +3,14 @@ import * as React from 'react';
 function Home (){
     return (
         <div>
-            <Typography  variant='h3' sx={{
+            <Typography  variant='h2' sx={{
                 display:'flex',
+                flexWrap: 'wrap',
                 justifyContent: 'center',
-                fontWeight: 'bold' 
+               
 
             }} >
-                Welcome to the Premium Services
+                Buy Or Sell At any cost.
             </Typography>
         </div>
     )
